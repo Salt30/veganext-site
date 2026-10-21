@@ -1,0 +1,28 @@
+{
+  "source": "../veganext-logo-stacked.png",
+  "sourceSha256": "c9f252b036655f20fa7383903bd5d76af071bd8a50906a1ea89723b70b972fcf",
+  "method": "Deterministic SVG layout and raster exports of the supplied artwork; original colors and proportions preserved.",
+  "markViewBox": [
+    526,
+    456,
+    1099,
+    653
+  ],
+  "wordmarkViewBox": [
+    341,
+    1157,
+    1424,
+    297
+  ],
+  "background": "#eef2f6",
+  "socialSizes": {
+    "website": [
+      1200,
+      630
+    ],
+    "github": [
+      1280,
+      640
+    ]
+  }
+}

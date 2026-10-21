@@ -79,3 +79,13 @@ VegaNext offering and contact information came from its existing website:
 Technology asset provenance is recorded in [`dist/assets/tech/sources.json`](dist/assets/tech/sources.json), including the official N-able horizontal SVG. Technology and VegaNext logos belong to their respective owners.
 
 Three.js is distributed under its included [MIT license](dist/assets/THREE-LICENSE.txt), copyright 2010–2025 three.js authors. Keep this license and the library's embedded notices with redistributed copies. This repository does not add a new license for VegaNext branding or the site as a whole.
+
+## Browser, app, and sharing artwork
+
+`dist/assets/brand/` contains exports made from the supplied VegaNext artwork, with its original colors and proportions. `source.json` records the source image hash and crop coordinates. Transparent mark-only SVG/PNG favicons and the multi-size `dist/favicon.ico` keep the symbol legible at small sizes. Apple and app icons use a pale silver background; the separate maskable icon leaves room for device cropping. `dist/site.webmanifest` declares the 192px, 512px, and maskable app icons.
+
+- `social-share.png`: 1200 × 630 website preview, wired to Open Graph and Twitter metadata in `dist/index.html`.
+- `github-social.png`: 1280 × 640 image for the repository's **Settings → General → Social preview** upload.
+- `veganext-horizontal.png`: transparent 1600 × 360 horizontal lockup for other brand uses. The website's existing header and footer presentation remains unchanged.
+
+When moving to a production host, update the canonical URL, `og:url`, and absolute `og:image`/`twitter:image` URLs in `dist/index.html` together. Sharing services must be able to fetch the page and image to display previews; private hosting can prevent that.
