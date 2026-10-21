@@ -1,0 +1,24 @@
+/* Original transparent artwork, arranged in the earlier horizontal lockup.
+   Both visible elements come from the supplied PNG with no color filters. */
+:root { --blue:#2c9adc; --brand-blue:#004070; --brand-navy:#0a3551; --silver:#b9b9ba; --muted:#91a0b2; }
+.brand-lockup { display:flex; align-items:center; gap:4%; width:166px; flex-shrink:0; background:transparent; box-shadow:none; border:0; }
+.logo-mark,.logo-type { position:relative; display:block; overflow:hidden; flex-shrink:0; }
+.logo-mark { width:29.6%; aspect-ratio:1099 / 653; }
+.logo-type { width:66.4%; aspect-ratio:1424 / 297; }
+.brand-lockup img,.brand .brand-lockup img,.footer-brand .brand-lockup img,.mini-brand .brand-lockup img {
+  position:absolute; max-width:none; height:auto; filter:none;
+}
+.brand-lockup .logo-mark img { width:186.351228%; left:-47.861692%; top:-69.831547%; }
+.brand-lockup .logo-type img { width:143.820225%; left:-23.946629%; top:-389.56229%; }
+.brand { width:166px; margin:0; }
+.mini-brand { width:140px; margin:0 12px 28px; }
+.mini-brand .brand-lockup { width:140px; }
+.footer-brand .brand-lockup { width:170px; }
+.silver-text { background-image:linear-gradient(180deg,#f9fafb 8%,#c8c9ca 48%,#82878d 100%); }
+.section-heading h2 span { color:#92999f; }
+.status-dot { background:#2c9adc; box-shadow:0 0 8px #2c9adc65; }
+.eyebrow { color:#82a4bd; }
+.text-link span,.nav-cta span { color:#55b1e6; }
+@media(max-width:800px) {
+  .brand,.brand .brand-lockup { width:148px; }
+}

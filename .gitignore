@@ -1,0 +1,41 @@
+.DS_Store
+*.tar.gz
+*.tar
+.qa/
+
+# Local credentials and environment configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+.aws/
+.ssh/
+
+# Optional local tooling and dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.cache/
+.parcel-cache/
+.next/
+.vercel/
+
+# Temporary files, logs, and local test output
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+tmp/
+temp/
+coverage/
+playwright-report/
+test-results/

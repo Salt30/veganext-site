@@ -1,0 +1,25 @@
+/* A shared frame gives the service examples the quiet rhythm of the reference. */
+.feature-grid { gap:0; border:1px solid #afc4d020; border-radius:10px; overflow:hidden; background:#07101a66; }
+.feature-grid .feature { display:flex; flex-direction:column; padding:30px 32px 32px; min-width:0; border-bottom:1px solid #afc4d020; }
+.feature-grid .feature:nth-child(odd) { border-right:1px solid #afc4d020; }
+.feature-grid .feature:nth-last-child(-n+2) { border-bottom:0; }
+.feature-grid .feature-art { border:0; border-radius:0; background:transparent; box-shadow:none; }
+.feature-grid .feature:hover .feature-art { border-color:transparent; }
+.feature-grid .feature-copy { padding:15px 2px 0; }
+.feature-grid .feature-copy .eyebrow { font-size:8px; color:#738ba1; letter-spacing:.13em; }
+.feature-grid .feature-copy h3 { font-size:25px; margin:9px 0 10px; }
+.feature-grid .feature-copy p { font-size:14px; max-width:44ch; line-height:1.75; }
+.feature-grid .feature-copy .text-link { margin-top:17px; }
+@media (min-width:701px) and (max-width:900px) {
+  .feature-grid .feature { padding:20px 20px 26px; }
+}
+@media (max-width:700px) {
+  .feature-grid .feature { padding:22px 24px 28px; }
+  .feature-grid .feature:nth-child(odd) { border-right:0; }
+  .feature-grid .feature:nth-last-child(2) { border-bottom:1px solid #afc4d020; }
+  .feature-grid .feature-copy { padding-top:8px; }
+}
+@media (max-width:359px) {
+  .feature-grid .feature { padding:18px 14px 24px; }
+  .feature-grid .feature-copy h3 { font-size:23px; }
+}

@@ -1,0 +1,122 @@
+/* Quiet process mockups: one compact idea per stage. */
+.exp-journey-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 36px 36px 16px;
+  min-height: 320px;
+  background: radial-gradient(ellipse at center, #12233625, transparent 72%);
+}
+.exp-artifact {
+  width: 100%;
+  max-width: 320px;
+  min-width: 0;
+  height: 216px;
+  display: grid;
+  align-items: center;
+  animation: exp-reveal .6s ease both;
+}
+.journey-bottom > .exp-playback { flex: 0 0 auto; min-width: 0; margin-left: auto; }
+.exp-assessment { display: grid; gap: 10px; }
+.exp-inventory-row {
+  display: flex; align-items: center; gap: 12px; min-height: 52px;
+  padding: 14px 16px; border: 1px solid #a8b4c022; border-radius: 7px;
+  background: #0a1421; color: #9ba7b5; font-size: 12px;
+}
+.exp-inventory-row i { width: 17px; height: 17px; flex-shrink: 0; color: #8f9cab; }
+.exp-inventory-row b { margin-left: auto; color: #7f8d9c; font-size: 12px; font-weight: 400; }
+.exp-inventory-row:last-child { opacity: .57; }
+.exp-inventory-row.exp-active { border-color: #2c9adc55; background: #0b2235; color: #d0e2ed; }
+.exp-inventory-row.exp-active i, .exp-inventory-row.exp-active b { color: #64b2df; }
+.exp-roadmap-list { list-style: none; margin: 0; padding: 0; position: relative; }
+.exp-roadmap-list::before { content: ''; position: absolute; top: 27px; bottom: 27px; left: 19px; width: 1px; background: #8a99a52b; }
+.exp-roadmap-list li { display: flex; align-items: center; gap: 14px; position: relative; min-height: 61px; color: #9ba7b5; font-size: 12px; }
+.exp-roadmap-list b { display: grid; place-items: center; width: 39px; height: 39px; flex-shrink: 0; border: 1px solid #9caebd2c; border-radius: 50%; background: #0b1522; color: #84919f; font: 10px/1 monospace; }
+.exp-roadmap-list li:last-child { opacity: .56; }
+.exp-roadmap-list .exp-active { color: #d0e2ed; }
+.exp-roadmap-list .exp-active b { border-color: #2c9adc66; color: #66b5e0; background: #0b2235; }
+.exp-delivery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; position: relative; }
+.exp-delivery-line { position: absolute; height: 1px; background: #8998a437; left: 10%; right: 10%; top: 50%; }
+.exp-release-node { position: relative; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 11px; height: 86px; border: 1px solid #9caebd2b; border-radius: 7px; background: #0b1522; color: #a4afbc; font-size: 11px; }
+.exp-release-node i { width: 21px; height: 21px; color: #95a2b1; }
+.exp-release-node.exp-active { border-color: #2c9adc55; background: #0b2235; color: #d0e2ed; }
+.exp-release-node.exp-active i { color: #66b5e0; }
+.exp-evolve { height: 200px; position: relative; }
+.exp-cycle-path { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: #8998a437; stroke-width: 1; }
+.exp-cycle-path .exp-cycle-arrow { stroke: #788996; }
+.exp-cycle-node { position: absolute; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px; width: 79px; height: 70px; border: 1px solid #9caebd2b; border-radius: 7px; background: #0b1522; color: #a4afbc; font-size: 11px; transform: translate(-50%, -50%); }
+.exp-cycle-node i { width: 19px; height: 19px; color: #95a2b1; }
+.exp-cycle-observe { left: 50%; top: 22%; }
+.exp-cycle-review { left: 20.6667%; top: 75%; }
+.exp-cycle-improve { left: 79.3333%; top: 75%; }
+.exp-cycle-node.exp-active { border-color: #2c9adc55; background: #0b2235; color: #d0e2ed; }
+.exp-cycle-node.exp-active i { color: #66b5e0; }
+
+/* Industry maps show the systems behind the work, rather than generic industry icons. */
+.exp-industry-visual {
+  position: relative; height: 144px; margin: -4px 0 26px; overflow: hidden;
+  color: #a4c9e2;
+  background: radial-gradient(ellipse at 50% 60%, #00407038, transparent 75%);
+  border-bottom: 1px solid #8ba5b527;
+}
+.exp-industry-caption { position: absolute; left: 0; right: 0; bottom: 9px; text-align: center; font: 8px/1.5 monospace; letter-spacing: .07em; color: #8498aa; }
+.exp-industry-node { position: absolute; width: 29%; max-width: 100px; height: 70px; top: 19px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; font-size: 11px; text-align: center; line-height: 1.25; border-radius: 6px; border: 1px solid #40617a; background: linear-gradient(135deg, #102536, #0a1522); color: #b7cedd; }
+.exp-industry-node i { width: 20px; height: 20px; color: #80c6ed; }
+.exp-care-patient { left: 0; }
+.exp-care-records { left: 50%; top: 9px; transform: translateX(-50%); height: 91px; border-color: #2c9adc88; background: linear-gradient(135deg, #103956, #091b2d); box-shadow: 0 0 35px #2c9adc10; }
+.exp-care-team { right: 0; }
+.exp-care-line { position: absolute; top: 53px; height: 1px; left: 5%; right: 5%; background: #5c859d; }
+.exp-care-line::after { content: ''; position: absolute; left: 25%; width: 50%; height: 1px; background: #9ce0ff; box-shadow: 0 0 9px #2c9adc; }
+.exp-route-map { position: absolute; width: 100%; height: 110px; top: 0; left: 0; }
+.exp-map-grid { fill: none; stroke: #7896ac0d; stroke-width: 1; }
+.exp-route-shadow { fill: none; stroke: #163e5b; stroke-width: 7; }
+.exp-route { fill: none; stroke: #66acd6; stroke-width: 1.4; stroke-dasharray: 5 4; }
+.exp-route-map circle { fill: #c6e8fb; stroke: #2c9adc; stroke-width: 3; }
+.exp-route-label { position: absolute; font-size: 10px; color: #b5c9d8; }
+.exp-route-start { left: 0; top: 86px; }
+.exp-route-mid { left: 50%; top: 39px; transform: translateX(-50%); padding: 3px 7px; border: 1px solid #416784; background: #0c1e2e; border-radius: 3px; }
+.exp-route-end { right: 0; top: 86px; }
+.exp-retail-systems { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; position: relative; padding: 9px 0 12px; }
+.exp-retail-systems > div { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; height: 67px; border: 1px solid #3e5d75; border-radius: 5px; background: #0c1c2b; }
+.exp-retail-systems > div::after { content: ''; position: absolute; height: 13px; width: 1px; bottom: -14px; background: #507b98; }
+.exp-retail-systems i { width: 21px; height: 21px; color: #82c0e5; }
+.exp-retail-systems span { color: #b8cbd9; font-size: 10px; }
+.exp-retail-bus { position: relative; display: flex; align-items: center; gap: 7px; width: 78%; margin: 1px auto 0; }
+.exp-retail-bus b { font-size: 9px; color: #92b3c9; font-weight: 400; white-space: nowrap; }
+.exp-retail-bus span { height: 1px; flex: 1; background: #507b98; }
+.exp-finance-flow { display: grid; grid-template-columns: 1fr 14px 1.1fr 14px 1fr; align-items: center; gap: 4px; height: 111px; }
+.exp-finance-flow > div { display: flex; align-items: center; flex-direction: column; justify-content: center; gap: 8px; height: 70px; border: 1px solid #3c5c73; border-radius: 5px; background: #0b1b2a; }
+.exp-finance-flow i { width: 21px; height: 21px; color: #82c0e5; }
+.exp-finance-flow span { font-size: 10px; color: #b7cbd9; }
+.exp-finance-flow .exp-finance-connector { color: #5f9ec6; font-size: 16px; text-align: center; }
+.exp-finance-flow .exp-finance-documents { gap: 5px; height: 94px; border-color: #2c9adc88; background: linear-gradient(145deg, #123852, #0b1a2a); }
+.exp-doc-line { width: 48%; height: 1px; background: #5d7b90; margin-top: 3px; }
+.exp-doc-line.short { width: 30%; margin-top: 0; }
+
+@keyframes exp-reveal { from { opacity: .1; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@media (min-width: 701px) and (max-width: 1000px) {
+  .exp-journey-visual { padding: 28px 24px 28px 8px; }
+  .exp-inventory-row { padding-inline: 12px; gap: 10px; font-size: 11px; }
+  .exp-roadmap-list li { gap: 11px; font-size: 11px; }
+  .exp-delivery { gap: 15px; }
+}
+@media (max-width: 700px) {
+  .exp-journey-visual { min-height: 284px; padding: 28px 28px 40px; }
+  .exp-industry-visual { margin-top: -5px; }
+}
+@media (max-width: 400px) {
+  .exp-journey-visual { padding-inline: 18px; }
+  .exp-inventory-row { font-size: 11px; gap: 10px; padding-inline: 12px; }
+  .exp-roadmap-list li { font-size: 11px; gap: 12px; }
+  .exp-delivery { gap: 13px; }
+  .exp-release-node { font-size: 10px; height: 80px; }
+  .exp-cycle-node { width: 68px; height: 66px; font-size: 10px; }
+  .exp-industry-caption { font-size: 7px; letter-spacing: .025em; }
+  .exp-industry-node { font-size: 10px; }
+  .exp-retail-systems { gap: 6px; }
+  .exp-retail-systems span { font-size: 9px; }
+  .exp-finance-flow span { font-size: 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .exp-artifact { animation: none; }
+}

@@ -1,0 +1,44 @@
+.command-dashboard { grid-template-columns:200px minmax(0,1fr); background:#07101a; box-shadow:0 0 0 5px #97b3c405; border-color:#a7c1d11f; }
+.command-dashboard .dashboard-sidebar { padding-top:28px; border-color:#a7c1d117; }
+.command-dashboard .sidebar-bottom { position:static; margin:32px 12px 0; }
+.command-toolbar { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:20px 28px; color:#b1bfcc; font-size:12px; border-bottom:1px solid #a7c1d117; }
+.command-toolbar>span:last-child { font:8px/1.5 monospace; letter-spacing:.1em; color:#6c7f90; }
+.command-canvas { position:relative; display:grid; place-items:center; min-height:355px; padding:52px 44px 64px; background:radial-gradient(ellipse at 50% 20%,#a7bfce06,transparent 70%); }
+.command-example { width:100%; max-width:580px; padding:22px 24px 0; border:1px solid #b0c6d51e; border-radius:9px; background:linear-gradient(145deg,#111c27a6,#07101a); box-shadow:0 0 0 5px #b7ccdb03,0 24px 70px #0002; }
+.command-request { display:flex; align-items:center; gap:12px; padding:0 0 22px; border-bottom:1px solid #a7c1d113; }
+.command-request-icon { display:grid; place-items:center; width:34px; height:34px; border:1px solid #a7c1d126; border-radius:8px; color:#a8bfd0; flex-shrink:0; }
+.command-request-icon i { width:17px; height:17px; }
+.command-request strong { display:block; font-size:12px; font-weight:400; color:#d5dee5; line-height:1.5; }
+.command-request small { display:block; font-size:10px; color:#7b8b9a; margin-top:3px; }
+.command-request-dot { width:5px; height:5px; border-radius:50%; background:#69aacf; margin-left:auto; flex-shrink:0; }
+.command-pipeline { position:relative; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:26px; padding:28px 0; }
+.command-pipeline::before { content:''; position:absolute; height:1px; top:51px; left:16%; right:16%; background:#7d9aae2c; }
+.command-node { position:relative; min-width:0; display:flex; flex-direction:column; align-items:center; gap:12px; text-align:center; font-size:10px; line-height:1.5; color:#718494; transition:color .5s; }
+.command-node-icon { position:relative; display:grid; place-items:center; width:48px; height:48px; border:1px solid #b0c6d52b; border-radius:9px; background:#0b1520; transition:border-color .5s,background .5s,color .5s,box-shadow .5s; }
+.command-node-icon i { width:21px; height:21px; }
+.command-node-icon b { position:absolute; top:-5px; right:-5px; display:grid; place-items:center; width:14px; height:14px; border-radius:50%; font-size:8px; background:#163a4d; color:#a3d6f3; opacity:0; transition:opacity .4s; }
+.command-node.is-active { color:#ccdde9; }
+.command-node.is-active .command-node-icon { border-color:#65a1c380; background:#102536; color:#9bd0ed; box-shadow:0 0 24px #2c9adc09; }
+.command-node.is-complete .command-node-icon b { opacity:1; }
+.command-result { display:flex; align-items:center; gap:8px; min-height:49px; border-top:1px solid #a7c1d113; color:#8e9eac; font-size:10px; line-height:1.6; padding:12px 0; }
+.command-result-icon { color:#7bb7d8; font-size:12px; }
+.command-playback { position:absolute; right:13px; bottom:10px; }
+@media(max-width:1199px) {
+  .command-dashboard { grid-template-columns:minmax(0,1fr); }
+  .command-dashboard .dashboard-sidebar { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; padding:12px; border-right:0; border-bottom:1px solid #a7c1d117; }
+  .command-dashboard .dashboard-sidebar .mini-brand,.command-dashboard .sidebar-label,.command-dashboard .sidebar-bottom { display:none; }
+  .command-dashboard .dash-tab { width:100%; margin:0; font-size:12px; white-space:normal; }
+}
+@media(max-width:700px) {
+  .command-dashboard .dashboard-sidebar { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .command-toolbar { padding:18px 20px; }
+  .command-canvas { min-height:320px; padding:32px 20px 60px; }
+  .command-example { padding:18px 16px 0; }
+  .command-pipeline { gap:8px; }
+}
+@media(max-width:359px) {
+  .command-canvas { padding-inline:12px; }
+  .command-example { padding-inline:12px; }
+  .command-node { font-size:9px; }
+  .command-request strong { font-size:11px; }
+}

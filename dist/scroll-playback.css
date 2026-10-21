@@ -1,0 +1,33 @@
+.demo-playback { width:100%; min-width:0; }
+.demo-playback-row { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.demo-playback button { display:inline-flex; align-items:center; justify-content:center; gap:7px; min-height:44px; min-width:44px; padding:9px 10px; border-radius:6px; font:11px/1.5 Arial,Helvetica,sans-serif; color:#b5cbdc; white-space:nowrap; }
+.demo-playback .demo-toggle { padding-inline:13px; border:1px solid #32698e; background:linear-gradient(120deg,#00407077,#00407022); color:#d4eaf8; }
+.demo-playback .demo-toggle:hover { border-color:#2c9adc; background:#004070aa; }
+.demo-toggle-symbol { font-size:13px; width:12px; text-align:center; }
+.demo-secondary-controls { display:flex; align-items:center; gap:3px; }
+.demo-secondary-controls button:hover { color:#fff; background:#16334a77; }
+.demo-playback button:focus-visible { outline:2px solid #8bccf3; outline-offset:3px; }
+.demo-progress { height:2px; margin-top:12px; overflow:hidden; background:#35566d55; border-radius:2px; }
+.demo-progress>span { display:block; width:100%; height:100%; transform:scaleX(0); transform-origin:left; background:linear-gradient(90deg,#004070,#59b9eb); }
+/* Quiet playback controls keep the example, rather than its player, in focus. */
+.demo-playback.demo-playback-compact { width:44px; flex:0 0 44px; margin:0; }
+.demo-playback-compact .demo-toggle-label,
+.demo-playback-compact .demo-secondary-controls,
+.demo-playback-compact .demo-progress { display:none; }
+.demo-playback.demo-playback-compact .demo-toggle { width:44px; height:44px; padding:0; border:0; border-radius:50%; background:transparent; color:#7c8f9e; }
+.demo-playback.demo-playback-compact .demo-toggle:hover { color:#d9e8f2; background:#a4c2d30b; }
+.demo-playback-compact .demo-toggle-symbol { font-size:12px; }
+@media (prefers-reduced-motion:reduce) {
+  .demo-playback.demo-playback-compact { width:88px; flex-basis:88px; }
+  .demo-playback-compact .demo-playback-row { gap:0; }
+  .demo-playback-compact .demo-secondary-controls { display:flex; }
+  .demo-playback-compact .demo-replay { display:none; }
+  .demo-playback-compact .demo-next { width:44px; padding:0; gap:0; font-size:0; }
+  .demo-playback-compact .demo-next span { font-size:14px; }
+}
+@media(max-width:400px) {
+  .demo-playback-row { gap:4px; }
+  .demo-playback button { font-size:10px; padding-inline:7px; gap:5px; }
+  .demo-playback .demo-toggle { padding-inline:10px; }
+  .demo-secondary-controls { gap:0; }
+}

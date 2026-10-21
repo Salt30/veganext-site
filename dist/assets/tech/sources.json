@@ -1,0 +1,52 @@
+{
+  "microsoft.svg": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Microsoft_logo_(2012).svg",
+    "viewBox": "0 0 337.6 72"
+  },
+  "aws.svg": {
+    "source": "https://aws.amazon.com/",
+    "note": "Original navigation SVG extracted without geometry edits",
+    "viewBox": "0 0 109 64"
+  },
+  "google-cloud.svg": {
+    "source": "https://www.gstatic.com/cgc/google-cloud-logo-fullcolor.svg",
+    "viewBox": "0 0 123 20"
+  },
+  "sentinelone.svg": {
+    "source": "https://www.sentinelone.com/next-assets/webui/logos/logo-sentinelone-full-white.svg",
+    "viewBox": "0 0 240 46"
+  },
+  "palo-alto-networks.svg": {
+    "source": "https://www.paloaltonetworks.com/etc/clientlibs/clean/imgs/pan-logo-dark.svg",
+    "viewBox": "0 0 348 65"
+  },
+  "fortinet.svg": {
+    "source": "https://www.fortinet.com/content/dam/fortinet/images/general/fortinet-footer-logo.svg",
+    "viewBox": "0 0 487.6 55"
+  },
+  "ubiquiti.png": {
+    "source": "https://techspecs.ui.com/static/brand/Ubiquiti/logo_horizontal_download.zip",
+    "archiveMember": "ubiquitilogo-horizontal/UbiquitiHorizontal-logo-light.png",
+    "width": 5935,
+    "height": 1400,
+    "alpha": true
+  },
+  "ubiquiti.svg": {
+    "source": "https://techspecs.ui.com/static/brand/Ubiquiti/logo_horizontal.svg",
+    "note": "Official preview SVG includes large padding; prefer ubiquiti.png",
+    "viewBox": "0 0 300 300"
+  },
+  "ubiquiti-horizontal.svg": {
+    "source": "https://techspecs.ui.com/static/brand/Ubiquiti/logo_horizontal_download.zip",
+    "archiveMember": "ubiquitilogo-horizontal/UbiquitiHorizontal-logo-light.svg",
+    "note": "Original package SVG includes large padding; prefer ubiquiti.png",
+    "viewBox": "0 0 1000 500"
+  },
+  "n-able.svg": {
+    "source": "https://www.n-able.com/wp-content/themes/nable.2021/img/framework/nable.negative.svg",
+    "page": "https://www.n-able.com/",
+    "note": "Official transparent horizontal logo used in N-able website header and footer; original SVG geometry preserved.",
+    "viewBox": "0 0 177 32"
+  }
+}
